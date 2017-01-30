@@ -3,11 +3,13 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: The *naked twins* in each unit constraint other unresolved boxes in the same unit, i.e. they could
+   not have the same digits as in the twins. By eliminating those digits, we start dealing with smaller search space and could possibly create more
+   naked twins and/or other constraints like one-choice, and hence has opportunities to eliminate more digits from those unresolved boxes.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: *Diagonal* adds new contraints to what we could set in each box. 1 though 9 could only appear once in both primary and secondary diagonals. The resolved boxes constraint what could be put in other unresolved boxes in the same diagonal, i.e. they could not take the same digit as in the resolved one. By elminiating those digits from the unresolved boxes in the same diagonal, we reduce the search space, and create more opportunities to further apply other strategies like one-choice, naked twins, i.e. constraints propogate, eliminate in each step, and lead us closer to the solution.
 
 ### Install
 
